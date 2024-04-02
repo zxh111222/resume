@@ -1,0 +1,88 @@
+/* 个人简历标题 */
+.title {
+    display: flex;
+}
+
+.big-title {
+    position: relative;
+    top: -20px;
+    justify-content: center;
+}
+
+.parallelogram {
+    display: flex;
+    transform: skew(-15deg);
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parallelogram-blue {
+    width: 150px;
+    height: 40px;
+    background-color: #5C79DC;
+    margin: 0 10px;
+}
+
+.parallelogram-orange {
+    width: 15px;
+    height: 25px;
+    background-color: #FEB98D;
+}
+
+.parallelogram-left {
+    margin: 10px 0 0 0;
+}
+
+.parallelogram-right {
+    margin: 10px 0 0 0;
+}
+
+/* 各个小标题 */
+.little-title {
+    margin: 5px 0;
+}
+
+.education {
+    display: flex;
+    margin-top: 4px;
+    flex-direction: column;
+}
+
+/* 
+.ability{
+
+} 
+*/
+
+.project {
+    display: flex;
+    flex-direction: column;
+} 
+
+/* 
+.awards{
+
+} 
+*/
+
+.parallelogram-little-middle {
+    width: 125px;
+    height: 30px;
+    margin: 0 6px;
+    font-size: 16px;
+}
+
+.parallelogram-little-left {
+    width: 10px;
+    height: 18px;
+    margin: 8px 0 0 0;
+}
+
+.parallelogram-little-right {
+    width: 10px;
+    height: 18px;
+    margin: 8px 0 0 0;
+}

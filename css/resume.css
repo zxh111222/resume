@@ -1,0 +1,31 @@
+.resume {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 4%;
+    border:  1px solid #5C79DC;
+    border-width: 30px 10px 5px 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.too-small {
+    display: none;
+}
+
+@media screen and (max-width: 760px) and (min-width: 671px) {
+    .resume {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .resume , .footer {
+        width: 80%;
+        display: none;
+    }
+
+    .too-small {
+        display: block;
+    }
+}

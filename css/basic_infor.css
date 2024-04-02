@@ -1,0 +1,40 @@
+.basic-infor {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.horizontal {
+    display: flex;
+}
+
+.name {
+    position: relative;
+    margin-right: 25px;
+    font-size: 40px;
+}
+
+.intention {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.baseInfor {
+    display: flex;
+    width: 600px;
+    height:70px;
+}
+
+.avatar {
+    display:flex;
+    float: right;
+}
+
+.photo {
+    width: 100px;
+    height: auto;
+    border:  1px solid #5C79DC;
+    box-shadow: 6px 6px 0 0 #5C79DC;
+    margin-right: 25px;
+}

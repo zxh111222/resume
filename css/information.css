@@ -1,0 +1,32 @@
+p, ol, ul {
+    line-height: 1.5em;
+}
+
+.major {
+    margin: 0 5px;
+}
+
+.ability-content {
+    margin: 3px 20px;
+}
+
+.project-content-1, .project-content-2{
+    margin: 3px 20px;
+}
+
+.project-content-3{
+    margin: 3px 20px;
+    text-indent: 2em;
+}
+
+.ol-one {
+    margin: 0;
+}
+
+.ol-two {
+    margin: 5px 0;
+}
+
+.evaluation-content {
+    margin: 3px 20px;
+}

@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/basic_infor.css">
     <link rel="stylesheet" href="./css/information.css">
+    <link rel="stylesheet" href="./css/hide_sections.css">
 </head>
 <body>
     <div class="too-small">不能再小了，请增加宽度观看</div>
+    <div id="content" class="hidden">
+        <p>这里放新内容</p>
+        <img class="close" src="./img/close.png" alt="关闭"></img>
+    </div>
     <div class="resume">
         <div class="title big-title">
             <div class="parallelogram parallelogram-orange parallelogram-left"></div>
@@ -57,6 +62,10 @@
                         <td colspan="3">专业成绩大学期间多次专业排名前3</td>
                     </tr>
                 </table>
+            </div>
+            <div class="ability-expansion">
+                <img id="icon" src="./img/icon.png" alt="点击显示隐藏部分"></img>
+                <p id="text1">点击图标显示</p>
             </div>
             <div class="ability">
                 <div class="horizontal little-title">
@@ -120,6 +129,9 @@
         </div>
     </footer>
     
+
+
+<script type="module" src="./js/click_and_close.js"></script>
 
 </body>
 </html>

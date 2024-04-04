@@ -13,10 +13,13 @@
 </head>
 <body>
     <div class="too-small">不能再小了，请增加宽度观看</div>
-    <div id="content" class="hidden">
-        <p>这里放新内容</p>
+    <!-- <div id="hidden-content" class="hidden">
+        <h3 id="hidden-title">技能自我评分</h3>
+        <div class="level-container">
+
+        </div>
         <img class="close" src="./img/close.png" alt="关闭"></img>
-    </div>
+    </div> -->
     <div class="resume">
         <div class="title big-title">
             <div class="parallelogram parallelogram-orange parallelogram-left"></div>
@@ -46,14 +49,17 @@
             <div class="education">
                 <div class="horizontal little-title">
                     <div class="parallelogram parallelogram-orange parallelogram-little-left"></div>
-                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">教育经历</div>
+                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">
+                        <img class="little-title-image education-image" src="./img/education-img.png">
+                        教育经历
+                    </div>
                     <div class="parallelogram parallelogram-orange parallelogram-little-right"></div>
                 </div>
-                <table class="major" width="720px">
+                <table class="major" width="690px">
                     <tr height="20px">
-                        <td width="210px">2020年10月-2024年6月</td>
-                        <td align="center" width="200px">毕业于：厦门工学院</td>
-                        <td align="center" width="310px">智能科学与技术专业 / 本科</td>
+                        <td width="230px">2020年10月-2024年6月</td>
+                        <td align="center" width="230px">毕业于：厦门工学院</td>
+                        <td align="center" width="230px">智能科学与技术专业 / 本科</td>
                     </tr>
                     <tr height="40px">
                         <td colspan="3">主修课程：python语言编程、深度学习、计算机视觉、自然语言处理、智能机器人等。</td>
@@ -63,14 +69,17 @@
                     </tr>
                 </table>
             </div>
-            <div class="ability-expansion">
+            <!-- <div class="ability-expansion">
                 <img id="icon" src="./img/icon.png" alt="点击显示隐藏部分"></img>
                 <p id="text1">点击图标显示</p>
-            </div>
+            </div> -->
             <div class="ability">
                 <div class="horizontal little-title">
                     <div class="parallelogram parallelogram-orange parallelogram-little-left"></div>
-                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">个人技能</div>
+                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">
+                        <img class="little-title-image" src="./img/skills.png">
+                        个人技能
+                    </div>
                     <div class="parallelogram parallelogram-orange parallelogram-little-right"></div>
                 </div>
                 <p class="ability-content">
@@ -80,10 +89,13 @@
             <div class="project">
                 <div class="horizontal little-title">
                     <div class="parallelogram parallelogram-orange parallelogram-little-left"></div>
-                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">项目经历</div>
+                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">
+                        <img class="little-title-image" src="./img/project.png">
+                        项目经历
+                    </div>
                     <div class="parallelogram parallelogram-orange parallelogram-little-right"></div>
                 </div>
-                <p class="project-content-1">基于深度学习的智能车自动巡航研究:</p>
+                <p class="project-content-1">一、基于深度学习的智能车自动巡航研究:</p>
                 <ol class="ol-one">
                     <li>
                         在智能小车行驶过程录制道路视频，逐帧截图并记录当前小车的转向角度，为保证算法的鲁棒性与实时性，采用传统视觉与深度学习结合的方式，在模拟场景中，智能车能够准确实时地完成交通场景中的路线巡航任务。
@@ -92,13 +104,32 @@
                         通过智能小车拍摄图像及视频，标注出智能小车在地图行驶中会遇到的地标，进行一系列图像处理后使用 MobileNet-SSD 模型进行训练，使得小车在行驶过程中检测到地标后进行相应的任务动作。
                     </li>
                 </ol>
-                <p class="project-content-2">计算机视觉项目的自身实践：</p>
+                <p class="project-content-2">二、计算机视觉项目的自身实践：</p>
                 <p class="project-content-3">对深度学习中 CV 领域许多经典网络模型进行实现，语义分割使用 FCN、UNet 模型，目标检测使用 SSD、Faster RCNN 系列、YOLO-v5 以及 DETR 等模型。对项目内容进行整理学习。</p>
+                <p class="project-content-4">三、基于RT-DETR的钢材表面缺陷检测：</p>
+                <p class="project-content-5">2020年DETR目标检测算法发布，是首个将Transformer融入目标检测领域的模型。2023年下半年百度开发出RT-DETR，是一种尖端的端到端目标检测器。2023年10月基于RT-DETR算法进行多方面的改进:</p>
+                <div class="improvement">
+                    <ul class="ul-one">
+                        <li>通过引入大型可分离内核注意力模块LSKA对跨尺度特征融合模块CCFM中的RepC3卷积模块进行替换</li>
+                        <li>结合多尺度卷积注意力MSCA</li>
+                    </ul>
+                </div>
+                <p class="project-content-6">新算法取名为RT-LSM-DETR，达成以下成果：</p>
+                <div class="achievement">
+                    <ul class="ul-one">
+                        <li>其在采用MixUp方法进行数据扩增的NEU-DET数据集上，达到94.0%的mAP和101.01FPS的检测速度，相较于原算法都有较好的提升</li>
+                        <li>2024年1月完成论文后，在IEEE Access期刊投稿论文</li>
+                    </ul>
+                </div>
+
             </div>
             <div class="awards">
                 <div class="horizontal little-title">
                     <div class="parallelogram parallelogram-orange parallelogram-little-left"></div>
-                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">获奖经历</div>
+                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">
+                        <img class="little-title-image" src="./img/awards.png">
+                        获奖经历
+                    </div>
                     <div class="parallelogram parallelogram-orange parallelogram-little-right"></div>
                 </div>
                 <ol class="ol-two">
@@ -113,7 +144,10 @@
             <div class="self-evaluation">
                 <div class="horizontal little-title">
                     <div class="parallelogram parallelogram-orange parallelogram-little-left"></div>
-                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">自我评价</div>
+                    <div class="parallelogram parallelogram-blue parallelogram-little-middle">
+                        <img class="little-title-image" src="./img/self-evaluation.png">
+                        自我评价
+                    </div>
                     <div class="parallelogram parallelogram-orange parallelogram-little-right"></div>
                 </div>
                 <p class="evaluation-content">喜欢专研软件，能做到软硬件协同，对现阶段大模型及计算机视觉的发展时刻关注。工作中善于总结经验，在实践中对新技能有很快的学习能力，并能够将其应用于实际工作中。</p>

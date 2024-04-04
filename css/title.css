@@ -68,7 +68,9 @@
 } 
 */
 
+
 .parallelogram-little-middle {
+    display: flex;
     width: 125px;
     height: 30px;
     margin: 0 6px;
@@ -85,4 +87,10 @@
     width: 10px;
     height: 18px;
     margin: 8px 0 0 0;
+}
+
+.little-title-image {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
 }

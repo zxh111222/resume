@@ -2,15 +2,13 @@
     position: relative;
     display: flex;
     float: right;
-    right: 40px;
-    transform: translateY(-50%);
-    
+    right: 10px;
 }
 
 #icon {
     margin: 0;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     z-index: 0;
 }
 
@@ -39,12 +37,20 @@
     transform: translateX(-50%);
 }
 
-#content {
+#hidden-content {
     border: 3px solid #FEB98D;
-    position: absolute;
-    top: 30%;
-    right: 0;
-    width: 300px;
-    height: 300px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 42%;
+    right: 20px;
+    width: 450px;
+    height: 400px;
     background-color: white;
+}
+
+#hidden-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
 }

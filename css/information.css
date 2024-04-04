@@ -10,16 +10,24 @@ p, ol, ul {
     margin: 3px 20px;
 }
 
-.project-content-1, .project-content-2{
+.project-content-1, .project-content-2, .project-content-4, .project-content-6 {
     margin: 3px 20px;
 }
 
-.project-content-3{
+.project-content-3 ,.project-content-5 {
     margin: 3px 20px;
     text-indent: 2em;
 }
 
 .ol-one {
+    margin: 0;
+} 
+
+.improvement, .achievement {
+    margin-left: 20px;
+}
+
+.ul-one {
     margin: 0;
 }
 

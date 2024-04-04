@@ -13,19 +13,13 @@
     display: none;
 }
 
-@media screen and (max-width: 760px) and (min-width: 671px) {
-    .resume {
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 670px) {
-    .resume , .footer {
-        width: 80%;
-        display: none;
-    }
-
+@media screen and (max-width: 780px) {
     .too-small {
         display: block;
+    }
+
+    .resume {
+        display: none;
     }
 }
